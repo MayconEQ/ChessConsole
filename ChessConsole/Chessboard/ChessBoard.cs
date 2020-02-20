@@ -13,6 +13,10 @@ namespace Chessboard {
             Cols = cols;
             Pieces = new Piece[rows,cols];
         }
+
+        public Piece Piece(int row,int col) {
+            return Pieces[row, col];
+        }
     }
 
 }
