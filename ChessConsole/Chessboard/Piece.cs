@@ -9,8 +9,8 @@ namespace Chessboard {
         public int MovementCount { get; protected set; }
         public ChessBoard ChessBoard { get; protected set; }
 
-        public Piece(Position position, Color color, ChessBoard chessBoard) {
-            Position = position;
+        public Piece(Color color, ChessBoard chessBoard) {
+            Position = null;
             Color = color;
             ChessBoard = chessBoard;
             MovementCount = 0;

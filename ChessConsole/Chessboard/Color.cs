@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Chessboard {
-    enum Color {
+    enum Color : int {
         White,
         Black,
         Yellow,

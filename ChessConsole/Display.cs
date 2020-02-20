@@ -17,7 +17,6 @@ namespace ChessConsole {
                 }
                 Console.WriteLine();
             }
-
         }
     }
 }
