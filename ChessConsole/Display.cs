@@ -9,7 +9,7 @@ namespace ChessConsole {
             for (int i = 0; i < board.Rows; i++) {
                 for (int j = 0; j < board.Cols; j++) {
                     if (board.Piece(i, j) == null) {
-                        Console.Write("- ");
+                        Console.Write("\u25A1");
                     } else {
                         Console.Write(board.Piece(i, j) + " ");
                     }

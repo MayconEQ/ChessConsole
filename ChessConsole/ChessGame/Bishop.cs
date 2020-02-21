@@ -10,7 +10,7 @@ namespace ChessGame {
         }
         public override string ToString() {
             
-            return "♗ \u2654";
+            return "♗";
         }
 
     }
