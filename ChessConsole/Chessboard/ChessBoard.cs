@@ -35,6 +35,15 @@ namespace Chessboard {
             Pieces[pos.Row, pos.Col] = p;
             p.Position = pos;
         }
+        public Piece OffPiece( Position pos) {
+            if (!ExistsPiece(pos)) {
+                return null;
+            }
+            Piece aux = Piece(pos);
+            aux.Position = null;
+            Pieces[pos.Row, pos.Col] = null;
+            return aux;
+        }
         
 
     }

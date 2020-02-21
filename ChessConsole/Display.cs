@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Chessboard;
+using ChessGame;
 
 namespace ChessConsole {
     class Display {
@@ -21,6 +22,12 @@ namespace ChessConsole {
 
             }
             Console.WriteLine("  a b c d e f g h");
+        }
+        public static PositionChess GetPositionChess() {
+            string s = Console.ReadLine();
+            char col = s[0];
+            int row = int.Parse(s[1] + "");
+            return new PositionChess(col, row);
         }
 
         public static void PrintPiece(Piece piece) {
